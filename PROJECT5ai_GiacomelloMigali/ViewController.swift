@@ -19,6 +19,11 @@ class ViewController: UIViewController {
         let intero:Int = Int(numero) ?? 0
         return intero
     }
+    
+    func calcolaAreaQuadrato(lato: Int) -> Int{
+        let area = pow(Double(lato), 2)
+        return Int(area)
+    }
 
 }
 
