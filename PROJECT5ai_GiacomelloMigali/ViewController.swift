@@ -25,5 +25,10 @@ class ViewController: UIViewController {
         return Int(area)
     }
 
+    @IBOutlet weak var output: UILabel!
+    @IBAction func input(_ sender: UITextField) {
+        let lato = fromStringToInt(numero: sender.text ?? "0")
+        output.text = String(calcolaAreaQuadrato(lato: lato))
+    }
 }
 
